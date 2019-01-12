@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>样式使用的优先级别</title>
+	<style type="text/css">
+		p{
+			background: red;
+			color: orange;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<!-- 可见内联样式级别高于外联样式 -->
+	<p style="color: lightcoral;font-weight: bolder;">这是一个段落内容。</p>
+	<!-- 练习 -->
+	<p style="font-size: 20px">我爱慕课</p>
+	<p style="font-size: 10px">我爱慕课</p>
+</body>
+</html>

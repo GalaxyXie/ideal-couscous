@@ -1,0 +1,74 @@
+!+tab
+通用属性：id,class,style
+特有属性：colspan，type，value
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<style >
+		.content{
+			height: 800px;
+		}
+		a{
+			color: #3333;
+			text-decoration: none; 
+			cursor: none;	
+			
+		}
+		a:visted{
+			color: #3344;
+		}
+		p
+		{
+			margin: 0;
+			padding: 0;
+		}
+		.imooc-logo
+		{	background: url(./sq.jpg);
+			
+			width: 200px;
+			height:80px;
+		}
+	</style>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<!--标题只有7级-->
+	<h1>标题内容</h1>
+	<h2>多级标题</h2>
+	<!--font标签不要再使用了，已经过时了。-->
+	<!--size-->
+	<font size="2">my html</font>
+	<!--face-->
+	<font face="Helvetica">html 入门</font>
+	<!--color-->
+	<font color="red">多姿多彩的html</font>
+	<font color="#d8d8d8">多姿多彩的html</font>
+	<font color="rgb(168,178,188)">多姿多彩的html</font>
+	<p>段落内容1 </p>
+	<p></p>
+	<p>段落内容2</p>
+	<input type="" name="" value="">
+	</br>
+	<!--去掉下划线，禁止跳转-->
+	<a href="http://www.imooc.com/" target="_blank">慕课网-新窗口</a>
+	</br>
+	<a href="http://www.imooc.com/" target="_self">慕课网-本窗口</a>
+	</br>
+	<a href="#titleThird">页面内锚点</a>
+	</br>
+	<a href="javascript:void(0);" >随便你点，无法跳转</a>
+	</br>
+	<a href="content">一堆内容</a>
+	</br>
+	<!--img无结束标签-->
+	<img width="100px" height="30px" alt="imooc-logo" src="http://www.imooc.com/static/img/index/logo.png"/>
+	<!--非标签形式显示图像-->
+	<p class="imooc-logo"></p>
+	<h3 id="titleThird">第三章</h3>
+	
+</body>
+</html>

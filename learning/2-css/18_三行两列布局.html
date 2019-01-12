@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两行三列布局</title>
+	<style type="text/css">
+	html,body{
+		margin: 0px;
+	}
+		header{
+				background-color: lightblue; 
+				height: 150px;
+		}
+		#container{
+			background-color: lightgrey;
+			height: 450px;
+		}
+		nav{
+			background-color: lightgreen;
+			height: 100%;
+			width: 150px;
+			float: left;
+		}
+		aside{
+			background-color: lightcoral;
+			height: 100%;
+			width: 100px;
+			float: right;
+		}
+		article{
+			background-color: lightyellow;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<!-- 由于浮动，某些文本内容可能被覆盖 -->
+	<header></header>
+	<div id="container">
+		<nav></nav>
+		<aside></aside>
+		<article>
+			<p>这是一个段落内容。</p>
+		</article>
+	</div>
+</body>
+</html>

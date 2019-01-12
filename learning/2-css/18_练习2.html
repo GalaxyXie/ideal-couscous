@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>网页制作</title>
+    <style type="text/css">
+        /*去除body,html的界面空白的地方*/
+        body{
+            /*设置外边距的上下距离为0*/
+            margin: 0px;
+        }
+        /*顶部的div设计,导航的部分*/
+        #head{
+            height: 80px;
+            background-color: black;
+        }
+        /*中间的div设计,主要的内容*/
+        #container{
+            height: 570px;
+            /*border: 3px lightcoral solid;*/
+             }
+        /*底部div的设计*/
+        #footer{
+            height: 80px;
+            /*border: 1px lightgreen solid;*/
+            background-color: black;
+        }
+        /*左边的div设计*/
+        #left{
+            height: 100%;
+            width: 39%;
+            background-color: lightblue;
+            float:  left;
+        }
+        /*设置中间的插线*/
+       #center{
+           height: 100%;
+           width: 0.5%;
+           background-color: #FF7F50;
+           float: left;
+       }
+       #middle{
+            height: 100%;
+           width: 30%;
+           background-color: lightblue;
+           float:left;
+           border: 1px lightcoral black;
+       }
+       /*设置div的右边的样式*/
+       #right{
+           height: 100%;
+           width: 30.5%;
+           background-color: lightblue;
+           float: right;
+       }
+       /*右侧的导航设置成表格*/
+       #table1{
+              line-height: 100%;
+              margin: 10px;
+             float: right;
+       }
+       /*表格中的内容*/
+       th{
+         padding: 16px 18px ;
+         color: white;
+       }
+      /*左侧的logo垂直方向居中*/
+      #img1{
+          vertical-align: center;
+          height: 100%;
+      }
+      /*左侧表格内容的路径填充背景颜色*/
+      span{
+          background-color: lightcoral;
+      }
+     /*设置整个表格的位置*/
+      #table2{
+          vertical-align: middle;
+       margin-left: 6%;
+       margin-top: 80px;
+      }
+      #table3{
+          margin-top: 80px;
+      }
+      /*标题1*/
+      #th1{
+          font-weight: bolder;
+          color: black;
+        font-size: 26px;
+        padding: 10px;
+      }
+      /*标题2*/
+      #th2{
+          font-weight: bolder;
+          color: black;
+        font-size: 26px;
+        padding: 10px;
+      }
+      /*设置表格的内边距*/
+      td{
+          padding: 10px;
+        }
+     #table4{
+         margin: 2px auto;
+         padding: 10px;
+     }
+     .th1{
+       font-size: 10px;
+     }
+     .in{
+       padding: 15px 40px;
+     }
+     #login{
+     vertical-align: middle;
+     margin-left: 87px;
+     margin-top: 87px;
+     }
+     #sub{
+       background-color: rgb(248,0,0);
+        padding: 15px 112px;
+        color: white;
+     }
+     .t{
+       padding:9px;
+  
+     }
+    </style>
+</head>
+<body>
+<div id="head">
+    <img id="img1" src="http://climg.mukewang.com/59093e9c00016ce303000100.png" />
+     <table id="table1">
+       <tr>
+           <th>课程</th>
+           <th>职业路径</th>
+           <th>实战</th>
+           <th>猿问</th>
+           <th>手记</th>
+       </tr>
+     </table>
+</div>
+<div id="container">
+    <div id="left">
+            <table id="table2">
+            <tr>
+                <th id="th1">课程推荐</th>
+            </tr>
+            <tr>
+                <td><span>职业路径</span></td>
+                <td>HTML5与CSS3是实现动态网页</td>
+            </tr>
+            <tr>
+                <td><span>职业路径</span></td>
+                <td>零基础入门Android</td>
+            </tr>
+            <tr>
+                <td><span>职业路径</span></td>
+                <td>iOS基础语法与常用控件</td>
+            </tr>
+            <tr>
+                <td><span>职业路径</span></td>
+                <td>PHP入门开发</td>
+            </tr>
+            <tr>
+                <td><span>职业路径</span></td>
+                <td>JAVA入门开发</td>
+            </tr>
+        </table>
+        </div>
+     <div id="middle">
+       <table id="table3">
+          <tr>
+          <th id="th2">相关课程</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td>CSS</td>
+                <td>Jquery</td>
+            </tr>
+            <tr>
+                <td>移动端基础</td>
+                <td>移动端APP开发</td>
+                <td></td>
+            </tr>
+        </table>
+     </div>
+    <div id="center"></div>
+    <div id="right">
+       <div id="login">
+            <h1>登录</h1>
+            <input class="in" type="text" name="用户名" placeholder="请输入登录邮箱/手机号" /><br/>
+            <br/>
+            <input class="in" type="password" name="密码" placeholder="6-16位密码,区分大小写,不能用空格" /><br/>
+             <br/>
+            <input id="sub" type="submit" name="登录" value="登录" />
+       </div>
+   </div>
+</div>
+<div id="footer">
+    <table id="table4">
+        <tr>
+            <th class="th1">网站首页</th>
+            <th class="th1">企业合作</th>
+            <th class="th1">人才招聘</th>
+            <th class="th1">练习我们</th>
+            <th class="th1">常见问题</th>
+            <th class="th1">友情链接</th>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

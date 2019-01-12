@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 表格标签是块级元素 
+		全页布局的作用已经退出舞台了
+		专注于自己应该专注的布局领域
+		表格样式一般由css表示-->
+	<table align="center">
+		<tr>
+			<th>学号</th>
+			<th>姓名</th>
+			<th>性别</th>
+		</tr>
+		<tr>
+			<td>2015</td>
+			<td>xpr</td>
+			<td>女</td>
+		</tr>
+	</table>
+	<table border=4 cellspacing="5" cellpadding="5" align="center">
+		<thead>
+			<tr>
+				<th>学号</th>
+				<th>姓名</th>
+				<th>总分</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr align="center">
+				<td colspan="3">按钮</td>
+			</tr>
+		</tfoot>
+		<tbody align="center">
+			<tr>
+				<td>2015</td>
+				<td>谢谢谢</td>
+				<td rowspan="2">500</td>
+			</tr>
+			<tr>
+				<td>2019</td>
+				<td>兰兰兰</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- 练习 -->
+	<br>
+	练习
+	<table border=2 cellspacing="2">
+		<thead>
+			<tr align="center">
+				<td colspan="3">天气表</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>省份</td>
+				<td>城市</td>
+				<td>温度(摄氏度)</td>
+			</tr>
+			<tr>
+				<td>北京</td>
+				<td>北京</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td rowspan="2">河北</td>
+				<td>石家庄</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>保定</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td rowspan="2">福建</td>
+				<td>福州</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<td>厦门</td>
+				<td>22</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
