@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position-absolute</title>
+	<style type="text/css">
+		.block{
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+			border: 2px solid black;
+		}
+
+		.block:nth-child(2){
+			position: absolute;
+			top:20px;
+			left: 20px;
+			width: 50%;
+			height: 50%
+			border-color: red;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<!-- 设置尺寸时，百分比比的是最近定位祖先元素 -->
+	<div class="block">A</div>
+	<div class="block">B</div>
+	<div class="block">C</div>
+</body>
+</html>

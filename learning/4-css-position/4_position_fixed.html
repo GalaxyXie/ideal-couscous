@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position-fixed</title>
+	<style type="text/css">
+	body{
+		height: 800px;
+		background: yellow;
+	}
+		.block{
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+			border: 2px solid black;
+		}
+		.block:nth-child(1){
+			position: absolute;
+			top: 10px;
+			left: 20px;
+		}
+		.block:nth-child(2){
+			position: fixed;
+			top: 10px;
+			left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 与absolute作用类似，区别在于相对于谁定位 -->
+	<!-- 固定定位不会随着视口的滚动而滚动 -->
+	<div class="block">绝对定位</div>
+	<div class="block">固定定位</div>
+</body>
+</html>

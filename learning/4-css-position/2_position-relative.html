@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position-relative</title>
+	<style type="text/css">
+		.block{
+			position: relative;
+			top:0px;
+			left: 0px;
+			width: 80px;
+			height: 80px;
+			border: 2px solid black;
+			text-align: center;
+			line-height: 80px;
+			float: left;
+			z-index: 9;
+		}
+		.block:nth-child(2){
+			position: relative;			
+			top:0px;
+			left: -84px;
+			border-color: red;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<!-- 对浮动元素设置relative偏移则好用了 -->
+	<div class="block">A</div>
+	<div class="block">B</div>
+
+</body>
+</html>

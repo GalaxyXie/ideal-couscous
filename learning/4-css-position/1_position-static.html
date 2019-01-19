@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position-static</title>
+	<style type="text/css">
+		.block{
+			position:static;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			border: 2px solid blue;
+			box-sizing: border-box;
+		}
+		.block:nth-child(1){
+			border: 2px solid green;
+			margin-left:auto;
+			margin-right: auto;
+
+		}
+		.block:nth-child(2){
+			border: 2px solid red;
+
+		}
+	</style>
+</head>
+<body>
+	<!-- 忽略top bottom left right或者z-index声明 -->
+	<!-- 两相邻的元素如果都设置了外边距，那么最终外边距邓等于两者外边距中最大的-->
+	<!-- 若元素具有固定的width和height值，如果把左右外边距设置为auto，则这个块将水平居中 -->
+	<div class="block">A</div>
+	<div class="block">B</div>
+	<div class="block">C</div>
+	<div class="block">D</div>
+</body>
+</html>
