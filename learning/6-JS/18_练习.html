@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>location对象</title>
+    </head>
+    <body>
+        <input type="button" value="打开页面" id="open">
+        
+    </body>
+    <script type="text/javascript">
+           //补充代码
+            var btn=document.getElementById('open');
+            btn.addEventListener("click",function () {
+            if(confirm("确定吗")){
+               window.open("http://www.imooc.com","");
+            }
+        });
+    </script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>screen</title>
+        <style type="text/css">
+            
+        </style>
+    </head>
+    <body>
+        <input type="button" value="当前显示屏幕宽度" onclick="sw()">
+        <input type="button" value="当前显示屏幕高度" onclick="sh()">
+        <input type="button" value="当前窗口文档显示宽度"
+        onclick="ww()">
+        <input type="button" value="当前窗口文档显示高度" onclick="wh()">      
+    </body>
+     <script type="text/javascript">
+        //补充代码
+       function sw() {
+          alert('当前显示屏幕宽度'+screen.availWidth);
+       }
+
+       function sh() {
+          alert("当前显示屏幕高度"+screen.availHeight);
+       }
+
+       function ww() {
+          alert('当前窗口文档显示宽度'+innerWidth);
+       }
+
+        function wh() {
+          alert('当前窗口文档显示高度'+innerHeight);
+       }
+     </script>
+</html>

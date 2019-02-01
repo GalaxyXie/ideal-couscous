@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	var anser=5;
+	var input=0;
+	while(input!=anser){
+		input = prompt("请输入您猜的数字","");
+		if(input > anser){
+			alert("猜大了！");
+		}else if(input < anser){
+			alert("猜小了！");
+		}else if(input == anser){
+			alert("猜对了！");
+		}else{
+			alert("请重新输入！");
+		}
+	}
+</script>
+</body>
+</html>

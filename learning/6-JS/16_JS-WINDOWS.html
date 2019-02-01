@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>window</title>
+</head>
+<body>
+	<button onclick="openwindow()">创建窗口</button>
+	<button onclick="myFunction()">调整窗口</button>
+	<button onclick="moveFunction()">调整窗口</button> 
+	<button onclick="closeFunction()">调整窗口</button> 
+	<script type="text/javascript">
+		// var a=1;
+		// alert(window.a)
+		var w;
+
+		function openwindow() {
+			//w=window.open('http://baidu.com','xiepr','width=300,height=300')
+			w=window.open('','','width=300,height=300');
+		}
+
+		function myFunction(){
+			w.resizeTo(500,500);
+			w.Focus();
+		}
+
+		function moveFunction(){
+			w.moveTo(700,500);
+			w.Focus();
+		}
+
+		function closeFunction(){
+			w.close();
+			w.Focus();
+		}
+	</script>
+</body>
+</html>
